@@ -1,0 +1,22 @@
+Funkcjonalność
+1.	Po włączeniu aplikacji użytkownik zobaczy formularz z polami
+    a.	‘Punkt początkowy’ obok którego pojawi się również ikona lokalizacji, pozwalająca pobrać jego aktualną lokalizację.
+    b.	‘Punkt końcowy’.
+    c.	Opłata początkowa.
+    d.	Cena za kilometr.
+    e.	Przycisk ‘Oblicz’.
+2.	Po wypełnieniu wszystkich pól (w razie niewypełnienia, któregoś z nich aplikacja poprosi o uzupełnienie danych) i kliknięciu ‘Oblicz’ 
+aplikacja pokaże najkrótszą trasę na mapie (Google Maps) oraz obliczoną cenę końcową na podstawie wpisanych danych o cenach 
+i obliczonych kilometrach. 
+3.	W navbarze znajdzie się również przycisk ‘POMOCY!’. 
+    a.	W zakładce pomocy, przy pierwszym włączeniu aplikacja poprosi o podanie numeru telefonu, który zostanie później przez aplikację 
+    zapamiętany. 
+    b.	Na ekranie będzie widoczny numer, który podał użytkownik i obok niego ikona edycji.
+        i.	Po kliknięciu w ikonę edycji, będzie można zmienić numer.
+    c.	Pod numerem będzie kilka przycisków z napisami alarmowymi:
+        i.	‘Pomocy’
+        ii.	‘Kierowca jest agresywny’
+        iii.	itp. 
+    d.	Po kliknięciu w któryś z przycisków aplikacja wyśle sms na podany numer o treści 
+    podanej na przycisku + ‘Moja lokalizacja: (aktualnie pobrana przez aplikację lokalizacja)’.
+4.	Dla wygody użytkownika, aplikacja będzie dostosowana do darkmode, ponieważ często korzysta się z taksówek wieczorami lub w nocy.
