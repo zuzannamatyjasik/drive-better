@@ -29,7 +29,7 @@ Po uruchomieniu aplikacji użytkownik wybiera swoją lokalizację oraz miejsce d
 
 ### Architektura systemu oprogramowania.
 ##### Architektura rozwoju.
-Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zostało zainstalowane repozytorium Fluttera, wspierające język Dart. Dodatkowo wykorzystane zostało API Google Maps w celu wyznaczenia, obliczenia i pokazania na mapie najkrótszej drogi do celu. Baza Firebase (Firebase Android SDK) została użyta do przechowywania alarmowych numerów telefonów. Projekt najlepiej uruchomić w emulatorze z Androidem 8.0 Oreo.
+Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zostało zainstalowane repozytorium Fluttera v 44.0.1, wspierające język Dart. Dodatkowo wykorzystane zostało API Google Maps w celu wyświetlenia mapy, pobrania aktualnej pozycji oraz wybrania punktu końcowego trasy. Do wskazania na mapie najkrótszej drogi do celu użyto API [Openrout Service](https://openrouteservice.org). Pakiet SqlLight został użyty do przechowywania alarmowego numeru telefonu. Projekt najlepiej uruchomić w emulatorze z Androidem 8.0 Oreo.
 ##### Architektura uruchomieniowa.
 W celu uruchomienia projektu najlepiej skożystac ze środowiska z emulatorem wspierającego system Android, przykładowo Android Studio.
 
