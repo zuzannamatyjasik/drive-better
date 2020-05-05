@@ -29,7 +29,7 @@ Po uruchomieniu aplikacji użytkownik wybiera swoją lokalizację oraz miejsce d
 
 ### Architektura systemu oprogramowania.
 ##### Architektura rozwoju.
-Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zostało zainstalowane repozytorium Fluttera v 44.0.1, wspierające język Dart. Wykorzystane zostało API Google Maps, aby wyświetlić mapę, pobrać aktualną pozycję oraz wybrać punkt końcowy trasy. Do wskazania na mapie najkrótszej drogi do celu użyto API [Openroute Service](https://openrouteservice.org). Pakiet sqflite zostanie użyty do połączenia się z SQLite w celu przechowywania alarmowego numeru telefonu. Projekt najlepiej uruchomić w emulatorze z Androidem 8.0 Oreo.
+Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zostało zainstalowane repozytorium Fluttera v 44.0.1, wspierające język Dart. Wykorzystane zostało API Google Maps, aby wyświetlić mapę, pobrać aktualną pozycję oraz wybrać punkt końcowy trasy. Do wskazania na mapie najkrótszej drogi do celu użyto API [Openroute Service](https://openrouteservice.org). Pakiet Sqlite zostanie użyty do połączenia się z SQLite w celu przechowywania alarmowego numeru telefonu. Projekt najlepiej uruchomić w emulatorze z Androidem 8.0 Oreo.
 ##### Architektura uruchomieniowa.
 
 
