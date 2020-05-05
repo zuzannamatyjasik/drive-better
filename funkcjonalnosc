@@ -8,7 +8,7 @@ Funkcjonalność
 2.	Po wypełnieniu wszystkich pól (w razie niewypełnienia, któregoś z nich aplikacja poprosi o uzupełnienie danych) i kliknięciu ‘Oblicz’ 
 aplikacja pokaże najkrótszą trasę na mapie (Google Maps) oraz obliczoną cenę końcową na podstawie wpisanych danych o cenach 
 i obliczonych kilometrach. 
-3.	W navbarze znajdzie się również przycisk ‘POMOCY!’. 
+3.	Przy mapie (prawy dony róg) znajdzie się również przycisk ‘POMOCY!’. 
     a.	W zakładce pomocy, przy pierwszym włączeniu aplikacja poprosi o podanie numeru telefonu, który zostanie później przez aplikację 
     zapamiętany. 
     b.	Na ekranie będzie widoczny numer, który podał użytkownik i obok niego ikona edycji.
