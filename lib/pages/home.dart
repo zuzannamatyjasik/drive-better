@@ -1,8 +1,10 @@
 import 'package:drivebetter/keys.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_map_location_picker/google_map_location_picker.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+
 
 class Home extends StatefulWidget {
   @override
@@ -13,13 +15,18 @@ class _HomeState extends State<Home> {
   LocationResult _punktPoczatkowy;
   LocationResult _punktKoncowy;
   bool _isButtonDisabled = true;
+  double cenaPoczatkowa;
+  double cenaZaKm;
+  double koszt;
 
   void goToRouteMap() {
     Navigator.pushNamed(context, '/routeMap', arguments: {
       'longitude_poczatek': _punktPoczatkowy.latLng.longitude,
       'latitude_poczatek': _punktPoczatkowy.latLng.latitude,
       'longitude_koniec': _punktKoncowy.latLng.longitude,
-      'latitude_koniec': _punktKoncowy.latLng.latitude
+      'latitude_koniec': _punktKoncowy.latLng.latitude,
+      'cenaPoczatkowa': cenaPoczatkowa,
+      'cenaZaKm': cenaZaKm
     });
   }
 
@@ -30,20 +37,17 @@ class _HomeState extends State<Home> {
         appBar: AppBar(
           centerTitle: true,
           title: Text(
-        'drive better',
-          style: TextStyle(
-            letterSpacing: 2,
-            color: Colors.black
+          'drive better',
+          style: Theme.of(context).textTheme.headline5
           ),
-          ),
-          backgroundColor: Colors.orangeAccent,
+          backgroundColor: Theme.of(context).primaryColor,
           actions: <Widget>[
             IconButton(
               icon: Icon(Icons.settings),
               onPressed: () {
                 Navigator.pushNamed(context, '/settings');
               },
-              color: Colors.black,
+              color: Theme.of(context).accentColor,
             )
           ],
         ),
@@ -58,9 +62,7 @@ class _HomeState extends State<Home> {
                       flex: 4,
                       child: Text(
                           'Punkt początkowy: ${((_punktPoczatkowy).toString() != 'null') ? '${_punktPoczatkowy.latLng.latitude}, ${_punktPoczatkowy.latLng.longitude}' : ' '}',
-                          style: TextStyle(
-                            letterSpacing: 2,
-                          )),
+                          style: Theme.of(context).textTheme.headline6),
                     ),
                     Expanded(
                       flex: 1,
@@ -69,12 +71,11 @@ class _HomeState extends State<Home> {
                         onPressed: () async {
                           LocationResult result = await showLocationPicker(
                             context,
-                            apiKey,
-                            initialCenter: LatLng(31.1975844, 29.9598339),
+                            apiKeyGoogle,
+                            initialCenter: LatLng(54.44061421, 18.57582930),
                             myLocationButtonEnabled: true,
                             layersButtonEnabled: false,
                           );
-                          print("result = $result");
                           setState(() => _punktPoczatkowy = result);
                         },
                       ),
@@ -90,9 +91,7 @@ class _HomeState extends State<Home> {
                       flex: 4,
                       child: Text(
                           'Punkt końcowy: ${((_punktKoncowy).toString() != 'null') ? '${_punktKoncowy.latLng.latitude}, ${_punktKoncowy.latLng.longitude}' : ' '}',
-                          style: TextStyle(
-                            letterSpacing: 2,
-                          )),
+                          style: Theme.of(context).textTheme.headline6),
                     ),
                     Expanded(
                       flex: 1,
@@ -101,12 +100,11 @@ class _HomeState extends State<Home> {
                         onPressed: () async {
                           LocationResult result = await showLocationPicker(
                             context,
-                            apiKey,
-                            initialCenter: LatLng(31.1975844, 29.9598339),
+                            apiKeyGoogle,
+                            initialCenter: LatLng(54.44061421, 18.57582930),
                             myLocationButtonEnabled: true,
                             layersButtonEnabled: false,
                           );
-                          print("result = $result");
                           setState(() {
                             _punktKoncowy = result;
                             if (_punktPoczatkowy.toString() != null &&
@@ -121,6 +119,9 @@ class _HomeState extends State<Home> {
                 ),
                 SizedBox(height: 20),
                 TextField(
+                  onChanged: (String str){
+                    cenaPoczatkowa = double.parse(str.replaceAll(',', '.'));
+                  },
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
@@ -128,6 +129,9 @@ class _HomeState extends State<Home> {
                 ),
                 SizedBox(height: 20),
                 TextField(
+                  onChanged: (String str){
+                    cenaZaKm = double.parse(str.replaceAll(',', '.'));
+                  },
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -136,13 +140,14 @@ class _HomeState extends State<Home> {
                 ),
                 SizedBox(height: 20),
                 RaisedButton(
-                  disabledColor: Colors.grey,
-                  onPressed: _isButtonDisabled ? null : goToRouteMap,
+                  disabledColor: Theme.of(context).disabledColor,
+                  onPressed: () {
+                    _isButtonDisabled ? null : goToRouteMap();
+                  },
                   child: Text(
                     'OBLICZ',
-                    style: TextStyle(letterSpacing: 2, fontSize: 20),
-                  ),
-                  color: Colors.orangeAccent,
+                    style: Theme.of(context).textTheme.button),
+                    color: Theme.of(context).primaryColor,
                 ),
               ],
             )));

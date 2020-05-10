@@ -8,7 +8,7 @@ class Loading extends StatefulWidget {
 
 class _LoadingState extends State<Loading> {
   void loadingTime() {
-    var future = Future.delayed(Duration(seconds: 2),
+    Future.delayed(Duration(seconds: 2),
         () => Navigator.pushReplacementNamed(context, '/home'));
   }
 
@@ -21,10 +21,10 @@ class _LoadingState extends State<Loading> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.orangeAccent,
+        backgroundColor: Theme.of(context).primaryColor,
         body: Center(
           child: SpinKitCircle(
-            color: Colors.black,
+            color: Theme.of(context).accentColor,
             size: 150.0,
             duration: Duration(seconds: 1),
           ),
