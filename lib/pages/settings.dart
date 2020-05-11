@@ -1,15 +1,41 @@
+import 'package:device_info/device_info.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:theme_provider/theme_provider.dart';
+import 'package:drivebetter/services/database.dart';
+
 
 class Settings extends StatefulWidget {
   @override
   _SettingsState createState() => _SettingsState();
 }
 
-class _SettingsState extends State<Settings> {
+class _SettingsState extends State<Settings>{
+String id;
+String numerTelefonu;
+
+void getAndroidId () async {
+      DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+      AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
+      id = androidInfo.androidId;
+      numerTelefonu = await DatabaseServices(id: id).getData();
+}
+
+void zaktualizujNumer(String nowyNumerTelefonu) async {
+      await DatabaseServices(id: id).updateUserData(nowyNumerTelefonu);
+}
+
+  @override
+  void initState() {
+    super.initState();
+    getAndroidId();
+  }
+
+
   @override
   Widget build(BuildContext context) {
+    
+
     return Scaffold(
         appBar: AppBar(
             title: Text(
@@ -25,12 +51,64 @@ class _SettingsState extends State<Settings> {
               Row(children: <Widget>[
                 Expanded(
                   flex: 4,
-                  child: Text('Dodaj alarmowy numer telefonu',
+                  child: Text('Alarmowy numer telefonu',
                       style: Theme.of(context).textTheme.headline6),
                 ),
                 Expanded(
                     flex: 1,
-                    child: IconButton(icon: Icon(Icons.add), onPressed: () {}))
+                    child: IconButton(
+                        icon: Icon(Icons.add),
+                        onPressed: () {
+                          return showDialog<void>(
+                              context: context,
+                              barrierDismissible: true,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  title: Text('Edytuj numer telefonu'),
+                                  content: SingleChildScrollView(
+                                    child: ListBody(
+                                      children: <Widget>[
+                                        Text('Aktualny numer $numerTelefonu'),
+                                        SizedBox(height: 20),
+                                        TextField(
+                                          onChanged: (String str){
+                                            setState(() {
+                                              numerTelefonu = str;
+                                            });
+                                          },
+                                          keyboardType: TextInputType.number,
+                                          decoration: InputDecoration(
+                                            hintText: '3333',
+                                            border: OutlineInputBorder(),
+                                            labelText: 'Numer telefonu: ',
+                                          ),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  actions: <Widget>[
+                                    FlatButton(
+                                      child: Text('Powrót',
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .button),
+                                      onPressed: () {
+                                        Navigator.of(context).pop();
+                                      },
+                                    ),
+                                    FlatButton(
+                                        child: Text('Zapisz',
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .button),
+                                        onPressed: () {
+                                          zaktualizujNumer(numerTelefonu);
+                                          Navigator.of(context).pop();
+                                        })
+                                  ],
+                                );
+                              });
+                        }))
               ]),
               SizedBox(height: 20),
               Row(children: <Widget>[
@@ -59,7 +137,6 @@ class _SettingsState extends State<Settings> {
                     child: IconButton(
                         icon: Icon(Icons.computer),
                         onPressed: () {
-                          print('oooo');
                           return showDialog<void>(
                               context: context,
                               barrierDismissible: true,
@@ -69,8 +146,10 @@ class _SettingsState extends State<Settings> {
                                   content: SingleChildScrollView(
                                     child: ListBody(
                                       children: <Widget>[
-                                        Text('Drive Better to aplikacja mająca na celu niwelowanie liczby oszustw finansowych popełnianych przez taksówkarzy. Jej zadaniem jest zwiększenie komfortu oraz bezpieczeństwa pasażerów.',
-                                        style: TextStyle(),)
+                                        Text(
+                                          'Drive Better to aplikacja mająca na celu niwelowanie liczby oszustw finansowych popełnianych przez taksówkarzy. Jej zadaniem jest zwiększenie komfortu oraz bezpieczeństwa pasażerów.',
+                                          style: TextStyle(),
+                                        )
                                       ],
                                     ),
                                   ),
@@ -112,7 +191,7 @@ class _SettingsState extends State<Settings> {
                                   content: SingleChildScrollView(
                                     child: ListBody(
                                       children: <Widget>[
-                                        Text('tutaj tez jakis tekst')
+                                        Text('Wszelkie uwagi można kierować na adres help@drivebetter.com')
                                       ],
                                     ),
                                   ),
