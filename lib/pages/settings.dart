@@ -1,29 +1,28 @@
 import 'package:device_info/device_info.dart';
+import 'package:drivebetter/services/database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:theme_provider/theme_provider.dart';
-import 'package:drivebetter/services/database.dart';
-
 
 class Settings extends StatefulWidget {
   @override
   _SettingsState createState() => _SettingsState();
 }
 
-class _SettingsState extends State<Settings>{
-String id;
-String numerTelefonu;
+class _SettingsState extends State<Settings> {
+  String id;
+  String numerTelefonu;
 
-void getAndroidId () async {
-      DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
-      AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-      id = androidInfo.androidId;
-      numerTelefonu = await DatabaseServices(id: id).getData();
-}
+  void getAndroidId() async {
+    DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+    AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
+    id = androidInfo.androidId;
+    numerTelefonu = await DatabaseServices(id: id).getData();
+  }
 
-void zaktualizujNumer(String nowyNumerTelefonu) async {
-      await DatabaseServices(id: id).updateUserData(nowyNumerTelefonu);
-}
+  void zaktualizujNumer(String nowyNumerTelefonu) async {
+    await DatabaseServices(id: id).updateUserData(nowyNumerTelefonu);
+  }
 
   @override
   void initState() {
@@ -31,11 +30,8 @@ void zaktualizujNumer(String nowyNumerTelefonu) async {
     getAndroidId();
   }
 
-
   @override
   Widget build(BuildContext context) {
-    
-
     return Scaffold(
         appBar: AppBar(
             title: Text(
@@ -71,7 +67,7 @@ void zaktualizujNumer(String nowyNumerTelefonu) async {
                                         Text('Aktualny numer $numerTelefonu'),
                                         SizedBox(height: 20),
                                         TextField(
-                                          onChanged: (String str){
+                                          onChanged: (String str) {
                                             setState(() {
                                               numerTelefonu = str;
                                             });
@@ -191,7 +187,8 @@ void zaktualizujNumer(String nowyNumerTelefonu) async {
                                   content: SingleChildScrollView(
                                     child: ListBody(
                                       children: <Widget>[
-                                        Text('Wszelkie uwagi można kierować na adres help@drivebetter.com')
+                                        Text(
+                                            'Wszelkie uwagi można kierować na adres help@drivebetter.com')
                                       ],
                                     ),
                                   ),

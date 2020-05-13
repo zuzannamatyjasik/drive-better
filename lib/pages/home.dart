@@ -19,6 +19,12 @@ class _HomeState extends State<Home> {
   double koszt;
 
   void goToRouteMap() {
+    cenaZaKm ??= 0;
+    cenaPoczatkowa ??= 0;
+
+    cenaZaKm.isNaN ? cenaZaKm = 0 : cenaZaKm = cenaZaKm;
+    cenaPoczatkowa.isNaN ? cenaPoczatkowa = 0 : cenaPoczatkowa = cenaPoczatkowa;
+
     Navigator.pushNamed(context, '/routeMap', arguments: {
       'longitude_poczatek': _punktPoczatkowy.latLng.longitude,
       'latitude_poczatek': _punktPoczatkowy.latLng.latitude,
@@ -31,15 +37,12 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
         resizeToAvoidBottomPadding: false,
         appBar: AppBar(
           centerTitle: true,
-          title: Text(
-          'drive better',
-          style: Theme.of(context).textTheme.headline5
-          ),
+          title: Text('drive better',
+              style: Theme.of(context).textTheme.headline5),
           backgroundColor: Theme.of(context).primaryColor,
           actions: <Widget>[
             IconButton(
@@ -119,7 +122,7 @@ class _HomeState extends State<Home> {
                 ),
                 SizedBox(height: 20),
                 TextField(
-                  onChanged: (String str){
+                  onChanged: (String str) {
                     cenaPoczatkowa = double.parse(str.replaceAll(',', '.'));
                   },
                   keyboardType: TextInputType.number,
@@ -129,7 +132,7 @@ class _HomeState extends State<Home> {
                 ),
                 SizedBox(height: 20),
                 TextField(
-                  onChanged: (String str){
+                  onChanged: (String str) {
                     cenaZaKm = double.parse(str.replaceAll(',', '.'));
                   },
                   keyboardType: TextInputType.number,
@@ -144,12 +147,13 @@ class _HomeState extends State<Home> {
                   onPressed: () {
                     _isButtonDisabled ? null : goToRouteMap();
                   },
-                  child: Text(
-                    'OBLICZ',
-                    style: Theme.of(context).textTheme.button),
-                    color: Theme.of(context).primaryColor,
+                  child:
+                      Text('OBLICZ', style: Theme.of(context).textTheme.button),
+                  color: Theme.of(context).primaryColor,
                 ),
               ],
-            )));
+            )
+        )
+    );
   }
 }
