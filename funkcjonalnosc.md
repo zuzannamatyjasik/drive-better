@@ -1,4 +1,4 @@
-#Funkcjonalność
+# Funkcjonalność
 1.	Po włączeniu aplikacji użytkownik zobaczy formularz z polami
     *	*Punkt początkowy* obok którego pojawi się również ikona lokalizacji, pozwalająca pobrać jego aktualną lokalizację.
     *	*Punkt końcowy* obok którego pojawi się ikona lokalizacji, pozwalająca użytkownikowi wskazać na mapie miejsce docelowe.
