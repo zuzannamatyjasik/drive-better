@@ -70,13 +70,13 @@ Nazwa testowanej aplikacji: DriveBetter
 
 Zostały przeprowadzone testy funkcjonalne.
 
-ZAŁOŻENIA DO TESTÓW:
+*ZAŁOŻENIA DO TESTÓW:*
 
 Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
 
 Środowisko: Android 10 One UI 2.0 
 
-WNIOSKI:
+*WNIOSKI:*
 
 Ocena: 
 
@@ -85,7 +85,9 @@ Logika aplikacji działa sprawnie. Aplikacja jest czytelna, prosta w nawigacji o
 Elementy aplikacji poddane testom:
 
 *Wyszukiwanie lokalizacji – DZIAŁA (z istotnym defektem)
+
 *Wyszukanie trasy i obliczenie kosztów przejazdu – DZIAŁA (z drobnym defektem)
+
 *Wysyłanie sms alarmowego – DZIAŁA (z drobnym defektem)
 
 Defekty:
@@ -114,8 +116,10 @@ Oczekiwane działanie: Wyświetlenie lokalizacji zgodnych z danymi wpisanymi w s
 
 Waga: poważny
 
-PODSUMOWANIE:
+*PODSUMOWANIE:*
 
 W dalszym testach dodatkowej uwagi wymaga:
+
 *Działanie wyszukiwarki.
+
 *Obsługa wyjątków.
