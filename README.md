@@ -44,8 +44,8 @@ Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zos
 <img src="https://i.ibb.co/28M087Z/Zrzut-ekranu-2020-05-18-o-10-34-38.png" alt="Zrzut-ekranu-2020-05-18-o-10-34-38" border="0" />
 <img src="https://i.ibb.co/pR0jd8v/Zrzut-ekranu-2020-05-18-o-10-35-14.png" alt="Zrzut-ekranu-2020-05-18-o-10-35-14" border="0" />
 <img src="https://i.ibb.co/DbVfxz1/Zrzut-ekranu-2020-05-18-o-10-37-19.png" alt="Zrzut-ekranu-2020-05-18-o-10-37-19" border="0" />
-<img src="https://i.ibb.co/cLqP18W/Zrzut-ekranu-2020-05-18-o-10-36-54.png" alt="Zrzut-ekranu-2020-05-18-o-10-36-54" border="0" />
 <img src="https://i.ibb.co/ccZrfYG/Zrzut-ekranu-2020-05-18-o-10-37-10.png" alt="Zrzut-ekranu-2020-05-18-o-10-37-10" border="0" />
+<img src="https://i.ibb.co/cLqP18W/Zrzut-ekranu-2020-05-18-o-10-36-54.png" alt="Zrzut-ekranu-2020-05-18-o-10-36-54" border="0" />
 <img src="https://i.ibb.co/93k7KqD/Zrzut-ekranu-2020-05-18-o-10-37-30.png" alt="Zrzut-ekranu-2020-05-18-o-10-37-30" border="0" />
 <img src="https://i.ibb.co/n6yhgdN/Zrzut-ekranu-2020-05-18-o-10-37-44.png" alt="Zrzut-ekranu-2020-05-18-o-10-37-44" border="0" />
 ##### Sprawozdanie z wykonania scenariuszy testów.
