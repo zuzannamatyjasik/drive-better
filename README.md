@@ -51,11 +51,15 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 
 ## Testy.
 #### Testy.
+
 <img src="https://i.ibb.co/JR2TWJk/Zrzut-ekranu-2020-05-18-o-12-46-26.png" alt="Zrzut-ekranu-2020-05-18-o-12-46-26" border="0">
 #### Przypadki testowe.
+
 <img src="https://i.ibb.co/1Zbg3hX/Zrzut-ekranu-2020-05-18-o-12-46-39.png" alt="Zrzut-ekranu-2020-05-18-o-12-46-39" border="0">
 <img src="https://i.ibb.co/LpZwt8r/Zrzut-ekranu-2020-05-18-o-12-46-52.png" alt="Zrzut-ekranu-2020-05-18-o-12-46-52" border="0">
 <img src="https://i.ibb.co/v476LnS/Zrzut-ekranu-2020-05-18-o-12-47-05.png" alt="Zrzut-ekranu-2020-05-18-o-12-47-05" border="0">
 <img src="https://i.ibb.co/rtmr7dV/Zrzut-ekranu-2020-05-18-o-12-47-16.png" alt="Zrzut-ekranu-2020-05-18-o-12-47-16" border="0">
 <img src="https://i.ibb.co/FKjhxvW/Zrzut-ekranu-2020-05-18-o-12-47-26.png" alt="Zrzut-ekranu-2020-05-18-o-12-47-26" border="0">
 #### Sprawozdanie z wykonania scenariuszy testów.
+
+*Comming soon*
