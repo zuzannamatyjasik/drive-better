@@ -65,3 +65,40 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 #### Sprawozdanie z wykonania scenariuszy testów.
 
 *Comming soon*
+Liczba godzin: 1h
+Nazwa testowanej aplikacji: DriveBetter
+Zostały przeprowadzone testy funkcjonalne.
+
+ZAŁOŻENIA DO TESTÓW:
+Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
+Środowisko: Android 10 One UI 2.0 
+
+WNIOSKI:
+Ocena: 
+Logika aplikacji działa sprawnie. Aplikacja jest czytelna, prosta w nawigacji oraz przyjazna dla użytkownika. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
+
+Elementy aplikacji poddane testom:
+Wyszukiwanie lokalizacji – DZIAŁA (z istotnym defektem)
+Wyszukanie trasy i obliczenie kosztów przejazdu – DZIAŁA (z drobnym defektem)
+Wysyłanie sms alarmowego – DZIAŁA (z drobnym defektem)
+
+Defekty:
+ID – 01 –
+Jeśli użytkownik nie zdefiniował numeru alarmowego, a spróbuje wysłać sms alarmowy, otworzy się aplikacja obsługująca usługę sms, ale wyświetli ona błąd, że odbiorca jest nieprawidłowy.
+Oczekiwane działanie: Aplikacja wyświetla komunikat o niezdefiniowanym numerze lub otwiera aplikację obsługującą sms zdefiniowanego odbiorcy.
+Waga: mało ważny 
+
+ID – 02 –
+Gdy punkt początkowy lub końcowy zostaną ustawione w lokalizacji niedostępnej dla ruchu samochodów aplikacja podejmie próbę wyszukania trasy. Ponieważ nie będzie mogła jej znaleźć, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.
+Oczekiwane działanie: Aplikacja wyświetla błąd związany z lokalizacją.
+Waga: trywialny
+
+ID – 03 – 
+Wyszukiwanie przy pomocy search box jest niemożliwe. Po wpisaniu nazwy lokalizacji, współrzędnych geograficznych aplikacja zawsze wskazuje brak rezultatów.
+Oczekiwane działanie: Wyświetlenie lokalizacji zgodnych z danymi wpisanymi w search box.
+Waga: poważny
+
+PODSUMOWANIE:
+W dalszym testach dodatkowej uwagi wymaga:
+Działanie wyszukiwarki.
+Obsługa wyjątków.
