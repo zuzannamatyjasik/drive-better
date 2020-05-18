@@ -82,7 +82,7 @@ Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
 
 Logika aplikacji działa sprawnie. Aplikacja jest czytelna, prosta w nawigacji oraz przyjazna dla użytkownika. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
 
-Elementy aplikacji poddane testom:
+###### Elementy aplikacji poddane testom:
 
 *Wysyłanie sms alarmowego – DZIAŁA (z drobnym defektem)
 
