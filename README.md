@@ -24,10 +24,14 @@ Aplikacja została stworzona przez studentki Uniwersytetu Gdańskiego z kierunku
 *Zakres działania aplikacji został dokładnie opisany w osobnym pliku "[Funkcjonalność](https://github.com/zuzannamatyjasik/drive-better/blob/master/funkcjonalnosc)".*
 Po uruchomieniu aplikacji użytkownik wybiera swoją lokalizację oraz miejsce docelowe. Następnie musi wprowadzić opłatę za kilometr (informację tę może znaleźć umieszczoną na taksówce lub spytać się kierowcy). Aplikacja wyznacza najkrótszą trasę oraz oblicza, jaka będzie cena przejazdu - kierowcy często w ogóle nie włączają taksometru i podają własną, zawyżoną cenę. W przypadku, kiedy kierowca zacznie zachowywać się agresywnie lub w inny, niepokojący nas sposób, pasażer będzie mógł nacisnąć przycisk SOS i powiadomić zaufaną osobę o zaistniałej sytuacji.
 
+*Diagram funkcjonalności*
 <img src="https://i.ibb.co/R4wWh48/Untitled-Document.png" alt="Untitled-Document" border="0" />
-Diagram funkcjonalności.
 
 ##### Wymagania niefunkcjonalne.
+###### Wydajność.
+###### Skalowalność.
+
+
 
 ### Architektura systemu oprogramowania.
 ##### Architektura rozwoju.
@@ -37,4 +41,5 @@ Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zos
 
 ### Testy.
 ##### Scenariusze testów.
+<img src="https://i.ibb.co/jWztQF1/drivebetter.jpg" alt="drivebetter" border="0" />
 ##### Sprawozdanie z wykonania scenariuszy testów.
