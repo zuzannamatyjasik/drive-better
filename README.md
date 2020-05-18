@@ -14,7 +14,7 @@
   * *Sprawozdanie z wykonania scenariuszy testów*
 
 ## Charakterystyka projektu
-Drive Better (DB) to aplikacja mająca na celu niwelowanie liczby oszustw finansowych popełnianych przez taksówkarzy. Po wprowadzeniu odpowiednich danych, zostaje wyznaczona najkrótsza trasa dojazdu oraz pokazana rzeczywista cena przejazdu.  Założeniem było zwiększenie komfortu oraz bezpieczeństwa pasażerów - z tego powodu został dodatkowo umieszczony przycisk SOS. Dokładny zakres funkcjonalności aplikacji został umieszczony poniżej.
+Drive Better (DB) to aplikacja mająca na celu niwelowanie liczby oszustw finansowych popełnianych przez taksówkarzy. Po wprowadzeniu odpowiednich danych, zostaje wyznaczona najkrótsza trasa dojazdu oraz pokazana rzeczywista cena przejazdu.  Założeniem było zwiększenie komfortu oraz bezpieczeństwa pasażerów - z tego powodu został dodatkowo umieszczony przycisk SOS. Dokładny zakres funkcjonalności aplikacji został umieszczony poniżej. Został tutaj zamieszczony projekt aplikacji, która nie jest jeszcze wdrożona do sklepu Play Store.
 
 ## Prawa autorskie.
 Aplikacja została stworzona przez studentki Uniwersytetu Gdańskiego z kierunku informatyka i ekonometria ze specjalnością aplikacje informatyczne w biznesie. Autorkami są Zuzanna Matyjasik, Patrycja Biedrzycka i Marika Idczak. Licencja do oprogramowania jest w pełni otwarta - MIT (Massachusetts Institute of Technology) z grupy FSF (Free Software Fundation).
