@@ -64,48 +64,48 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 
 ## Sprawozdanie z wykonania scenariuszy testów.
 
-Liczba godzin: 1h
-
+*Liczba godzin: 1h
 Nazwa testowanej aplikacji: DriveBetter
+Zostały przeprowadzone testy funkcjonalne.*
 
-Zostały przeprowadzone testy funkcjonalne.
+##### Założenia do testów.
+* Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
+* Środowisko: Android 10 One UI 2.0 
 
-#### Założenia do testów:
+##### Wnioski.
 
-Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
+##### Ocena.
+Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czytelny dla użytkownika interface. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
 
-Środowisko: Android 10 One UI 2.0 
+##### Elementy aplikacji poddane testom:
+* Wysyłanie sms alarmowego – **działa** (z drobnym defektem)
+* Wyszukanie trasy i obliczenie kosztów przejazdu – **działa** (z drobnym defektem)
+* Wyszukiwanie lokalizacji – **działa** (z istotnym defektem)
 
-#### Wnioski:
 
-#### Ocena: 
-Logika aplikacji działa sprawnie. Aplikacja jest czytelna, prosta w nawigacji oraz przyjazna dla użytkownika. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
-
-#### Elementy aplikacji poddane testom:
-* Wysyłanie sms alarmowego – DZIAŁA (z drobnym defektem)
-* Wyszukanie trasy i obliczenie kosztów przejazdu – DZIAŁA (z drobnym defektem)
-* Wyszukiwanie lokalizacji – DZIAŁA (z istotnym defektem)
-
-#### Defekty:
+##### Defekty:
 * *ID – 01 –*
-Jeśli użytkownik nie zdefiniował numeru alarmowego, a spróbuje wysłać sms alarmowy, otworzy się aplikacja obsługująca usługę sms, ale wyświetli ona błąd, że odbiorca jest nieprawidłowy.
-
-**Oczekiwane działanie:** Aplikacja wyświetla komunikat o niezdefiniowanym numerze lub otwiera aplikację obsługującą sms zdefiniowanego odbiorcy.
-**Waga:** mało ważny 
+    Jeśli użytkownik nie zdefiniował numeru, a spróbuje wysłać sms alarmowy, otworzy się aplikacja obsługująca usługę sms, ale wyświetli ona błąd, że odbiorca jest nieprawidłowy.
+    **Oczekiwane działanie:** Aplikacja wyświetla komunikat o niezdefiniowanym numerze lub otwiera aplikację obsługującą sms zdefiniowanego odbiorcy.
+    **Waga:** mało ważny 
+    <img src="https://i.ibb.co/3vVkWG6/ss6.jpg" alt="ss6" border="0">
 
 * *ID – 02 –*
-Gdy punkt początkowy lub końcowy zostaną ustawione w lokalizacji niedostępnej dla ruchu samochodów aplikacja podejmie próbę wyszukania trasy. Ponieważ nie będzie mogła jej znaleźć, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.
-
-**Oczekiwane działanie:** Aplikacja wyświetla błąd związany z lokalizacją.
-**Waga:** trywialny
-
+    Gdy punkt początkowy lub końcowy zostanie ustawiony w lokalizacji niedostępnej dla ruchu samochodowego, aplikacja podejmie próbę wyszukania trasy. Ze względu na brak możliwości jej znalezienia, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.
+    **Oczekiwane działanie:** Aplikacja wyświetla błąd związany z lokalizacją.
+    **Waga:** trywialny
+    <img src="https://i.ibb.co/xJrW71Z/ss3.jpg" alt="ss3" border="0">
+    <img src="https://i.ibb.co/6Z5LLBr/ss5.jpg" alt="ss5" border="0">
+    
 * *ID – 03 –*
-Wyszukiwanie przy pomocy search box jest niemożliwe. Po wpisaniu nazwy lokalizacji, współrzędnych geograficznych aplikacja zawsze wskazuje brak rezultatów.
+    Wyszukiwanie przy pomocy search box jest niemożliwe. Po wpisaniu nazwy lokalizacji lub współrzędnych geograficznych, aplikacja zawsze wskazuje brak rezultatów.
+    **Oczekiwane działanie:** Wyświetlenie lokalizacji zgodnych z danymi wpisanymi w search box.
+    **Waga:** poważny
+    <img src="https://i.ibb.co/KLWkJSf/ss2.jpg" alt="ss2" border="0">
+    <img src="https://i.ibb.co/yPNxDZD/ss1.jpg" alt="ss1" border="0">
 
-**Oczekiwane działanie:** Wyświetlenie lokalizacji zgodnych z danymi wpisanymi w search box.
-**Waga:** poważny
-
-##### Podsumowanie:
+#### Podsumowanie:
 W dalszym testach dodatkowej uwagi wymaga:
 * Działanie wyszukiwarki.
 * Obsługa wyjątków.
+
