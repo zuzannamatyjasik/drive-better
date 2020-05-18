@@ -65,17 +65,15 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 ## Sprawozdanie z wykonania scenariuszy testów.
 
 *Liczba godzin: 1h
+
 Nazwa testowanej aplikacji: DriveBetter
+
 Zostały przeprowadzone testy funkcjonalne.*
 
 ##### Założenia do testów.
 * Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
 * Środowisko: Android 10 One UI 2.0 
 
-##### Wnioski.
-
-##### Ocena.
-Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czytelny dla użytkownika interface. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
 
 ##### Elementy aplikacji poddane testom:
 * Wysyłanie sms alarmowego – **działa** (z drobnym defektem)
@@ -85,6 +83,7 @@ Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czy
 
 ##### Defekty:
 * *ID – 01 –*
+
     Jeśli użytkownik nie zdefiniował numeru, a spróbuje wysłać sms alarmowy, otworzy się aplikacja obsługująca usługę sms, ale wyświetli ona błąd, że odbiorca jest nieprawidłowy.
     
     **Oczekiwane działanie:** Aplikacja wyświetla komunikat o niezdefiniowanym numerze lub otwiera aplikację obsługującą sms zdefiniowanego odbiorcy.
@@ -94,6 +93,7 @@ Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czy
     <img src="https://i.ibb.co/jzMFvQ4/Zrzut-ekranu-2020-05-18-o-17-00-52.png" alt="Zrzut-ekranu-2020-05-18-o-17-00-52" border="0">
 
 * *ID – 02 –*
+
     Gdy punkt początkowy lub końcowy zostanie ustawiony w lokalizacji niedostępnej dla ruchu samochodowego, aplikacja podejmie próbę wyszukania trasy. Ze względu na brak możliwości jej znalezienia, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.
     
     **Oczekiwane działanie:** Aplikacja wyświetla błąd związany z lokalizacją.
@@ -105,6 +105,7 @@ Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czy
     <img src="https://i.ibb.co/W07NKvP/Zrzut-ekranu-2020-05-18-o-17-00-43.png" alt="Zrzut-ekranu-2020-05-18-o-17-00-43" border="0">
     
 * *ID – 03 –*
+
     Wyszukiwanie przy pomocy search box jest niemożliwe. Po wpisaniu nazwy lokalizacji lub współrzędnych geograficznych, aplikacja zawsze wskazuje brak rezultatów.
     
     **Oczekiwane działanie:** Wyświetlenie lokalizacji zgodnych z danymi wpisanymi w search box.
@@ -114,9 +115,10 @@ Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czy
     <img src="https://i.ibb.co/YPM0RN2/Zrzut-ekranu-2020-05-18-o-16-48-21.png" alt="Zrzut-ekranu-2020-05-18-o-16-48-21" border="0">
     <img src="https://i.ibb.co/0Fch49b/Zrzut-ekranu-2020-05-18-o-17-00-18.png" alt="Zrzut-ekranu-2020-05-18-o-17-00-18" border="0">
     
-#### Podsumowanie:
+#### Podsumowanie i ocena.
 
 W dalszym testach dodatkowej uwagi wymaga:
 * Działanie wyszukiwarki.
 * Obsługa wyjątków.
 
+Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czytelny dla użytkownika interface. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
