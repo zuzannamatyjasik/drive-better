@@ -65,7 +65,9 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 #### Sprawozdanie z wykonania scenariuszy testów.
 
 Liczba godzin: 1h
+
 Nazwa testowanej aplikacji: DriveBetter
+
 Zostały przeprowadzone testy funkcjonalne.
 
 ZAŁOŻENIA DO TESTÓW:
