@@ -84,11 +84,11 @@ Logika aplikacji działa sprawnie. Aplikacja jest czytelna, prosta w nawigacji o
 
 Elementy aplikacji poddane testom:
 
-*Wyszukiwanie lokalizacji – DZIAŁA (z istotnym defektem)
+*Wysyłanie sms alarmowego – DZIAŁA (z drobnym defektem)
 
 *Wyszukanie trasy i obliczenie kosztów przejazdu – DZIAŁA (z drobnym defektem)
 
-*Wysyłanie sms alarmowego – DZIAŁA (z drobnym defektem)
+*Wyszukiwanie lokalizacji – DZIAŁA (z istotnym defektem)
 
 ###### Defekty:
 
