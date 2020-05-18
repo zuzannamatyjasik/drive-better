@@ -64,24 +64,24 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 
 ## Sprawozdanie z wykonania scenariuszy testów.
 
-*Liczba godzin: 1h
+*Liczba godzin: 1h*
 
-Nazwa testowanej aplikacji: DriveBetter
+*Nazwa testowanej aplikacji: DriveBetter*
 
-Zostały przeprowadzone testy funkcjonalne.*
+*Zostały przeprowadzone testy funkcjonalne.*
 
-##### Założenia do testów.
+#### Założenia do testów.
 * Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
 * Środowisko: Android 10 One UI 2.0 
 
 
-##### Elementy aplikacji poddane testom:
+#### Elementy aplikacji poddane testom:
 * Wysyłanie sms alarmowego – **działa** (z drobnym defektem)
 * Wyszukanie trasy i obliczenie kosztów przejazdu – **działa** (z drobnym defektem)
 * Wyszukiwanie lokalizacji – **działa** (z istotnym defektem)
 
 
-##### Defekty:
+#### Defekty:
 * *ID – 01 –*
 
     Jeśli użytkownik nie zdefiniował numeru, a spróbuje wysłać sms alarmowy, otworzy się aplikacja obsługująca usługę sms, ale wyświetli ona błąd, że odbiorca jest nieprawidłowy.
@@ -115,7 +115,7 @@ Zostały przeprowadzone testy funkcjonalne.*
     <img src="https://i.ibb.co/YPM0RN2/Zrzut-ekranu-2020-05-18-o-16-48-21.png" alt="Zrzut-ekranu-2020-05-18-o-16-48-21" border="0">
     <img src="https://i.ibb.co/0Fch49b/Zrzut-ekranu-2020-05-18-o-17-00-18.png" alt="Zrzut-ekranu-2020-05-18-o-17-00-18" border="0">
     
-#### Podsumowanie i ocena.
+### Podsumowanie i ocena.
 
 W dalszym testach dodatkowej uwagi wymaga:
 * Działanie wyszukiwarki.
