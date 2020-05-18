@@ -41,5 +41,6 @@ Aplikacja została napisana w środowisku Android Studio v. 3.5.5. Dodatkowo zos
 
 ### Testy.
 ##### Scenariusze testów.
-<img src="https://i.ibb.co/jWztQF1/drivebetter.jpg" alt="drivebetter" border="0" />
+<a href="https://ibb.co/LQgDQzN"><img src="https://i.ibb.co/28M087Z/Zrzut-ekranu-2020-05-18-o-10-34-38.png" alt="Zrzut-ekranu-2020-05-18-o-10-34-38" border="0" /></a>
+<a href="https://ibb.co/HxFTqsD"><img src="https://i.ibb.co/pR0jd8v/Zrzut-ekranu-2020-05-18-o-10-35-14.png" alt="Zrzut-ekranu-2020-05-18-o-10-35-14" border="0" /></a>
 ##### Sprawozdanie z wykonania scenariuszy testów.
