@@ -72,7 +72,7 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 * Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
 * Środowisko: Android 10 One UI 2.0 
 
-### Ocena.
+#### Ocena.
 
 Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czytelny dla użytkownika interface. Zastosowano odpowiednie kontrasty i przyjemne dla oczu kolory. Poprawy wymaga wyszukiwanie lokalizacji przy pomocy search box oraz obsługa kilku wyjątków.
 
@@ -111,7 +111,7 @@ Logika aplikacji działa sprawnie. Aplikacja jest prosta w nawigacji oraz ma czy
     <img src="https://i.ibb.co/YPM0RN2/Zrzut-ekranu-2020-05-18-o-16-48-21.png" alt="Zrzut-ekranu-2020-05-18-o-16-48-21" border="0">
     <img src="https://i.ibb.co/0Fch49b/Zrzut-ekranu-2020-05-18-o-17-00-18.png" alt="Zrzut-ekranu-2020-05-18-o-17-00-18" border="0">
     
-### Podsumowanie.
+#### Podsumowanie.
 
 W dalszym testach dodatkowej uwagi wymaga:
 * Działanie wyszukiwarki.
