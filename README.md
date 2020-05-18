@@ -90,8 +90,8 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 
 * *ID – 02 –*
 
-    Gdy punkt początkowy lub końcowy zostanie ustawiony w lokalizacji niedostępnej dla ruchu samochodowego, aplikacja podejmie próbę wyszukania trasy. Ze względu na brak możliwości jej znalezienia, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.\ 
-    **Oczekiwane działanie:** Aplikacja wyświetla błąd związany z lokalizacją\    
+    Gdy punkt początkowy lub końcowy zostanie ustawiony w lokalizacji niedostępnej dla ruchu samochodowego, aplikacja podejmie próbę wyszukania trasy. Ze względu na brak możliwości jej znalezienia, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.\
+    **Oczekiwane działanie:** Aplikacja wyświetla błąd związany z lokalizacją\
     **Waga:** trywialny
     
     <img src="https://i.ibb.co/j42DGXS/Zrzut-ekranu-2020-05-18-o-17-00-23.png" alt="Zrzut-ekranu-2020-05-18-o-17-00-23" border="0">
