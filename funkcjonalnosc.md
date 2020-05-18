@@ -1,18 +1,16 @@
-Funkcjonalność
+#Funkcjonalność
 1.	Po włączeniu aplikacji użytkownik zobaczy formularz z polami
-    a.	‘Punkt początkowy’ obok którego pojawi się również ikona lokalizacji, pozwalająca pobrać jego aktualną lokalizację.
-    b.	‘Punkt końcowy’ obok którego pojawi się ikona lokalizacji, pozwalająca użytkownikowi wskazać na mapie miejsce docelowe.
-    c.	Opłata początkowa.
-    d.	Cena za kilometr.
-    e.	Przycisk ‘Oblicz’.
-2.	Po wypełnieniu wszystkich pól i kliknięciu ‘Oblicz’ aplikacja pokaże wybraną trasę na mapie (Google Maps) oraz obliczoną cenę końcową na podstawie wpisanych danych o cenach i obliczonych kilometrach.  
-3.	Pod mapą (prawy dony róg) znajdzie się również przycisk ‘POMOCY!’. 
-    a.	W zakładce ustawień, użytkownik będzie mógł podać alarmowy numer telefonu, który zostanie później przez aplikację zapamiętany. Użytkownik będzie mieć możliwość zmiany numeru w każdym momencie w ten sam sposób, w jaki dodał go za pierwszym razem. 
-    b.	Na ekranie będzie widoczny numer, który podał użytkownik i obok niego ikona edycji.
-        i.	Po kliknięciu w ikonę edycji, będzie można zmienić numer.
-    c.	Po naciśnięciu przycisku alarmowego, użytkownik zobaczy szereg wiadomości z napisami alarmowymi, spośród których będzie mógł wybrać m.in.:
-        i.	‘Pomocy’
-        ii.	‘Kierowca jest agresywny’
-        iii.	‘Zadzwoń szybko’
-    d.	Po kliknięciu w którąś z wiadomości aplikacja przeniesie użytkownika do systemowej aplikacji wysyłającej wiadomości z wpisanym już, podanym numerem telefonu oraz treścią podaną na przycisku.
+    *	*Punkt początkowy* obok którego pojawi się również ikona lokalizacji, pozwalająca pobrać jego aktualną lokalizację.
+    *	*Punkt końcowy* obok którego pojawi się ikona lokalizacji, pozwalająca użytkownikowi wskazać na mapie miejsce docelowe.
+    *	*Opłata początkowa*
+    *	*Cena za kilometr*
+    *	Przycisk *Oblicz*
+2.	Po wypełnieniu wszystkich pól i kliknięciu *Oblicz* aplikacja pokaże wybraną trasę na mapie (Google Maps) oraz obliczoną cenę końcową na podstawie wpisanych danych o cenach i obliczonych kilometrach.  
+3.	Pod mapą (prawy dony róg) znajdzie się również przycisk *POMOCY!*. 
+    *	W zakładce ustawień, użytkownik będzie mógł podać alarmowy numer telefonu, który zostanie później przez aplikację zapamiętany. Użytkownik będzie mieć możliwość zmiany numeru w każdym momencie w ten sam sposób, w jaki dodał go za pierwszym razem. 
+    *	Po naciśnięciu przycisku alarmowego, użytkownik zobaczy szereg wiadomości z napisami alarmowymi, spośród których będzie mógł wybrać m.in.:
+        *	*Pomocy*
+        *	*Kierowca jest agresywny*
+        *	*Zadzwoń szybko*
+    *	Po kliknięciu w którąś z wiadomości aplikacja przeniesie użytkownika do systemowej aplikacji wysyłającej wiadomości z wpisanym już, podanym numerem telefonu oraz treścią podaną na przycisku.
 4.	Dla wygody użytkownika, aplikacja będzie dostosowana do darkmode, ponieważ często korzysta się z taksówek wieczorami lub w nocy.
