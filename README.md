@@ -87,7 +87,7 @@ ID – 01 –
 Jeśli użytkownik nie zdefiniował numeru alarmowego, a spróbuje wysłać sms alarmowy, otworzy się aplikacja obsługująca usługę sms, ale wyświetli ona błąd, że odbiorca jest nieprawidłowy.
 Oczekiwane działanie: Aplikacja wyświetla komunikat o niezdefiniowanym numerze lub otwiera aplikację obsługującą sms zdefiniowanego odbiorcy.
 Waga: mało ważny 
-
+<img src="https://drive.google.com/open?id=1Ys-iIhBjCcQ-QLBnl3qDbVwrUQ9qqcv7" alt="ss1" border=0">
 ID – 02 –
 Gdy punkt początkowy lub końcowy zostaną ustawione w lokalizacji niedostępnej dla ruchu samochodów aplikacja podejmie próbę wyszukania trasy. Ponieważ nie będzie mogła jej znaleźć, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.
 Oczekiwane działanie: Aplikacja wyświetla błąd związany z lokalizacją.
