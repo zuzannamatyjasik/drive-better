@@ -99,7 +99,7 @@ Jeśli użytkownik nie zdefiniował numeru alarmowego, a spróbuje wysłać sms 
 Oczekiwane działanie: Aplikacja wyświetla komunikat o niezdefiniowanym numerze lub otwiera aplikację obsługującą sms zdefiniowanego odbiorcy.
 
 Waga: mało ważny 
-
+<img src="https://i.ibb.co/ZdmWQ73/ss6.jpg" alt="ss6" border="0"></a>
 ID – 02 –
 
 Gdy punkt początkowy lub końcowy zostaną ustawione w lokalizacji niedostępnej dla ruchu samochodów aplikacja podejmie próbę wyszukania trasy. Ponieważ nie będzie mogła jej znaleźć, przez cały czas na ekranie będzie się wyświetlał widok ładowania. Podczas testu, po 5 minutach aplikacja wciąż ładowała trasę.
