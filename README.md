@@ -64,9 +64,9 @@ Aplikacja została przygotowana pod kątem wprowadzenia do Play Store, dlatego p
 
 #### Sprawozdanie z wykonania scenariuszy testów.
 
-Liczba godzin: 1h
-Nazwa testowanej aplikacji: DriveBetter
-Zostały przeprowadzone testy funkcjonalne.
+##Liczba godzin: 1h
+##Nazwa testowanej aplikacji: DriveBetter
+##Zostały przeprowadzone testy funkcjonalne.
 
 ZAŁOŻENIA DO TESTÓW:
 Data i godzina wykonania testów: 18.05.2020 od 13:00 do 14:00
