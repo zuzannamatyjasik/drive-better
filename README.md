@@ -1,7 +1,7 @@
 # DriveBetter
 
 ##### *Spis treści:*
-* *Charakterystyka i cel projektu*
+* *[Charakterystyka i cel projektu](#charakterystyka-projektu)*
 * *Prawa autorskie*
 * *Specyfikacja wymagań*
   * *Funkcjonalność*
