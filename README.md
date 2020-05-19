@@ -2,14 +2,14 @@
 
 ##### *Spis treści:*
 * *[Charakterystyka i cel projektu](#charakterystyka-projektu)*
-* *Prawa autorskie*
-* *Specyfikacja wymagań*
+* *[Prawa autorskie](#prawa-autorskie)*
+* *[Specyfikacja wymagań](#specyfikacja-wymagań)*
   * *Funkcjonalność*
   * *Wymagania niefunkcjonalne*
-* *Architektura systemu oprogramowania*
+* *[Architektura systemu oprogramowania](#architektura-systemu-oprogramowania)*
   * *Architektura rozwoju*
   * *Architektura uruchomieniowa*
-* *Testy*
+* *[Testy](#testy)*
   * *Testy*
   * *Przypadki testowe*
   * *Sprawozdanie z wykonania scenariuszy testów*
