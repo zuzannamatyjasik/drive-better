@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
     cenaZaKm ??= 0;
     cenaPoczatkowa ??= 0;
 
-    cenaZaKm.isNaN ? cenaZaKm = 0 : cenaZaKm = cenaZaKm;
+    cenaZaKm.isNaN ? cenaZaKm = 0 : cenaZaKm = cenaZaKm; //jeśli ktoś wpisze niepoprawne dane, to cenie zostaje przypisane 0
     cenaPoczatkowa.isNaN ? cenaPoczatkowa = 0 : cenaPoczatkowa = cenaPoczatkowa;
 
     Navigator.pushNamed(context, '/routeMap', arguments: {
@@ -128,7 +128,9 @@ class _HomeState extends State<Home> {
                   keyboardType: TextInputType.number,
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      labelText: 'Opłata początkowa'),
+                      labelText: 'Opłata początkowa',
+                    labelStyle: Theme.of(context).textTheme.headline6,
+                  ),
                 ),
                 SizedBox(height: 20),
                 TextField(
@@ -139,6 +141,7 @@ class _HomeState extends State<Home> {
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Cena za kilometr',
+                    labelStyle: Theme.of(context).textTheme.headline6,
                   ),
                 ),
                 SizedBox(height: 20),

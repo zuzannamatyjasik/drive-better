@@ -4,9 +4,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sms/flutter_sms.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:geolocator/geolocator.dart';
 
 class RouteMap extends StatelessWidget {
-  Map data = {};
+  Map data = {}; //mapa przechowująca informacje wprowadzane przez użytkownika w poprzednim ekranie
 
   List<String> message = [
     "Pomocy",
@@ -22,18 +23,31 @@ class RouteMap extends StatelessWidget {
   Set<Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
 
+  Position _currentPosition;
+
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
   }
 
-  // Wysylanie SMS do numeru alarmowego
   void _wyslijSMS(String message) async {
     String numerTelefonu = await getAndroidId();
     List<String> recipents = [numerTelefonu];
 
-    String _result = await sendSMS(message: message, recipients: recipents)
+    await sendSMS(message: message, recipients: recipents)
         .catchError((onError) {
       print(onError);
+    });
+  }
+
+  _getCurrentLocation() {
+    final Geolocator geolocator = Geolocator()..forceAndroidLocationManager;
+
+    geolocator
+        .getCurrentPosition(desiredAccuracy: LocationAccuracy.best)
+        .then((Position position) {
+        _currentPosition = position;
+    }).catchError((e) {
+      print(e);
     });
   }
 
@@ -139,7 +153,8 @@ class RouteMap extends StatelessWidget {
                                               child: Text(message[0],
                                                   textAlign: TextAlign.center),
                                               onPressed: () {
-                                                _wyslijSMS(message[0]);
+                                                _getCurrentLocation();
+                                                _wyslijSMS(message[0] + "\nMoje położenie: ${_currentPosition.latitude}, ${_currentPosition.longitude}");
                                               },
                                             ),
                                             SizedBox(height: 12),
@@ -152,7 +167,8 @@ class RouteMap extends StatelessWidget {
                                               child: Text(message[1],
                                                   textAlign: TextAlign.center),
                                               onPressed: () {
-                                                _wyslijSMS(message[1]);
+                                                _getCurrentLocation();
+                                                _wyslijSMS(message[1] + "\nMoje położenie: ${_currentPosition.latitude},  ${_currentPosition.longitude}");
                                               },
                                             ),
                                             SizedBox(height: 12),
@@ -167,7 +183,8 @@ class RouteMap extends StatelessWidget {
                                                 textAlign: TextAlign.center,
                                               ),
                                               onPressed: () {
-                                                _wyslijSMS(message[2]);
+                                                _getCurrentLocation();
+                                                _wyslijSMS(message[2] + "\nMoje położenie: ${_currentPosition.latitude}, ${_currentPosition.longitude}");
                                               },
                                             )
                                           ],
